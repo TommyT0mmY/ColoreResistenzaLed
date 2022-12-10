@@ -1,16 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400&display=swap');
-
-@font-face {
-	font-family: "Optimistic Display";
-	font-weight: 300;
-	src: url("../fonts/Optimistic_Display_W_Md.woff2") format("woff2");
-}
-
 * { 
 	box-sizing: border-box;
-	font-family: 'Josefin Sans', sans-serif;
-	font-weight: 300;
 }
 
 html, body {

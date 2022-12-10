@@ -1,12 +1,41 @@
-:root {
-    --primary0: #ECEFF1;
-    --primary1: #CFD8DC;
-    --primary2: #B0BEC5;
-    --primary3: #90A4AE;
-    --primary4: #78909C;
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400&display=swap");
 
-    --secondary1: #FFCC80;
-    --secondary2: #FFB74D;
-    --secondary3: #FFA726;
-    --secondary4: #FF9100;
+@font-face {
+  font-family: Optimistic Display;
+  src: url("../fonts/Optimistic_Display_W_Lt.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: Optimistic Display;
+  src: url("https://beta.reactjs.org/fonts/Optimistic_Display_W_Md.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: Optimistic Display;
+  src: url("https://beta.reactjs.org/fonts/Optimistic_Display_W_Bd.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --primary0: #eceff1;
+  --primary1: #cfd8dc;
+  --primary2: #b0bec5;
+  --primary3: #90a4ae;
+  --primary4: #78909c;
+
+  --secondary1: #ffcc80;
+  --secondary2: #ffb74d;
+  --secondary3: #ffa726;
+  --secondary4: #ff9100;
+}
+
+html {
+    font-family: 'Optimistic Display', sans-serif;
+	font-weight: 300;
 }
