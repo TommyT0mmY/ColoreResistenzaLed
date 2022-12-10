@@ -1,42 +1,45 @@
 .popup {
-    opacity: 0%;
-    z-index: 100;
     position: absolute;
     width: fit-content;
-    bottom: 101vh;
-
     left: 50%;
+    z-index: 100;
+    
+    opacity: 0%;
+    bottom: 101vh;
+    
     transform: translateX(-50%);
 
-    transition: all 500ms cubic-bezier(0,0,1,0.2), opacity 0s 500ms; /*animazione di uscita*/
+    transition: all 500ms cubic-bezier(0,0,1,0.1), opacity 500ms 0s; /*animazione di uscita*/
 }
 
 .popup.open {
     bottom: 85vh;
     opacity: 100%;
-    transition: all 500ms cubic-bezier(0,0,0.2,1), opacity 500ms; /*animazione di entrata*/
 
+    transition: all 500ms cubic-bezier(0,0,0.1,1), opacity 0s; /*animazione di entrata*/
 }
 
 .popupcontent {
     display: flex;
-    text-align: center;
     width: max-content;
-    /* background: var(--primary0); */
-    background: red;
+    max-width: 40vw;
+    gap: 2vw;
+    background: var(--error0);
+
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    
     padding-left: 2vw;
     padding-right: 2vw;
     padding-top: 1vh;
     padding-bottom: 1vh;
+
     font-size: 1vw;
 }
 
 .popupicon {
-    width: 1vw;
-    height: 1vw;
-}
-
-.popupclose {
-    width: 1vw;
-    height: 1vw;
+    user-select: none;
+    width: 1.4vw;
+    height: 1.4vw;
 }

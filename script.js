@@ -1,13 +1,21 @@
-function onError(err) {
-    console.log(err);
+function openPopup(message) {
     $('.popup').addClass('open');
-    setTimeout(() => {
-        $('.popup').removeClass('open');
-    }, 1500);
+    $('.popup').find('.popuptext').text(message);
+}
+
+function closePopup() {
+    $('.popup').removeClass('open');
+}
+
+function onError(errorMessage) {
+    console.warn(errorMessage);
+
+    openPopup(errorMessage);
+    // setTimeout(closePopup, 1500);
 }
 
 function onSubmit(vcc, i, color) {
     console.log(vcc, i, color);
     //check if vcc and i are numbers
-    onError("Error");
+    onError("Lorem ipsum dolor sit amet, consectetur adipiscing elit.");
 }

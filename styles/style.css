@@ -33,9 +33,11 @@
   --secondary2: #ffb74d;
   --secondary3: #ffa726;
   --secondary4: #ff9100;
+
+  --error0: #fd4646;
 }
 
 html {
-    font-family: 'Optimistic Display', sans-serif;
+  font-family: 'Optimistic Display', sans-serif;
 	font-weight: 300;
 }
