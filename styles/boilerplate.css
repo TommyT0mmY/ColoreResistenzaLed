@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400&display=swap');
+
+@font-face {
+	font-family: "Optimistic Display";
+	font-weight: 300;
+	src: url("../fonts/Optimistic_Display_W_Md.woff2") format("woff2");
+}
+
+* { 
+	box-sizing: border-box;
+	font-family: 'Josefin Sans', sans-serif;
+	font-weight: 300;
+}
+
+html, body {
+	min-height: 100%;
+	background: #fff;
+	color: #000;
+}
+	
+body {
+	font-size: 1.4rem;
+	text-rendering: optimizeLegibility;
+}
+	
+body, ul, ol, dl {
+	margin: 0;
+}
+article, aside, audio, 
+footer, header, nav, section, video {
+	display: block; 
+}
+	
+h1 {
+	font-size: 1.4rem;
+	font-weight: 400;
+}
+	
+p { 
+	-ms-word-break: break-all;
+	word-break: break-all;
+	word-break: break-word;
+	-moz-hyphens: auto;
+	-webkit-hyphens: auto;
+	-ms-hyphens: auto;
+	hyphens: auto;
+} 
+	
+textarea { 
+	resize: vertical;
+}
+ 
+table { border-collapse: collapse; }
+td {
+	padding: .5rem;
+}
+	
+img { 
+	border: none;
+	max-width: 100%;
+}
+	
+input[type="submit"]::-moz-focus-inner, 
+	input[type="button"]::-moz-focus-inner {
+		border : 0px;
+	}
+	
+input[type="search"] { 
+	-webkit-appearance: textfield;
+} 
+input[type="submit"] { 
+	-webkit-appearance:none;
+}
+	
+input:required:after {
+	color: #f00;
+	content: " *";
+}
+
+input[type="email"]:invalid { 
+	background: #f00;
+}
+	
+.right { 
+	float: right;
+	margin-left: 2rem;
+	clear: right;
+}
+.left { 
+	float: left;
+	margin-right: 2rem;
+	clear: left;
+}
+	
+sub, sup { 
+	line-height: 0;
+}

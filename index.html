@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Esercizio Resistenze - Tommaso Goni</title>
+    <link rel="stylesheet" href="styles/boilerplate.css" />
+    <link rel="stylesheet" href="styles/form.css" />
+    <link rel="stylesheet" href="styles/popup.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+    <div class="popup">
+      <div class="popupcontent">
+          <img class="popupicon" src="icons/error_icon.svg" alt="error" />
+          <p class="popuptext">Errore</p>
+          <img class="popupclose" src="icons/close_icon.svg" alt="close">
+      </div>
+    </div>
+    <div class="spandiv">
+      <span></span>
+    </div>
+    <div class="formContainer">
+      <form action="javascript:void(0);" class="form">
+        <div class="formTitle">
+          <h1>Calcolo colore resistenza</h1>
+        </div>
+        <div class="inputContainer">
+          <label for="1"><span>Tensione</span></label>
+          <input type="text" id="1" name="vcc" class="field" />
+        </div>
+        <div class="inputContainer">
+          <label for="2"><span>Corrente</span></label>
+          <input type="text" id="2" name="i" class="field" />
+        </div>
+        <div class="inputContainer">
+          <label for="3"><span>Colore LED</span></label>
+          <select id="3" name="color" class="field">
+            <option value="giallo">Giallo</option>
+            <option value="bianco">Bianco</option>
+            <option value="blu">Blu</option>
+            <option value="rosso">Rosso</option>
+          </select>
+        </div>
+        <button type="submit" class="submitButton" onclick="onSubmit(this.form.vcc.value, this.form.i.value, this.form.color.value)">Invia</button>
+      </form>
+    </div>
+  </body>
+  <footer>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+  </footer>
+</html>

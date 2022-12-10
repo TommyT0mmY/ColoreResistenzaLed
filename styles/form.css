@@ -1,0 +1,260 @@
+.formContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 20vh;
+    padding-top: 5vh;
+    padding-bottom: 50px;
+}
+
+.form {
+    background: var(--primary0);
+    width: 50%;
+    min-height: 50%;
+    border-radius: 10px;
+    padding-bottom: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.formTitle h1 {
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 400;
+    margin: 0;
+
+    position: relative;
+    top: 5px;
+}
+
+
+/* INPUT CONTAINER */
+.inputContainer {
+    display: flex;
+    width: 90%;
+    margin-left: 5%;
+    
+    margin-top: 1.2%;
+    margin-bottom: 1%;
+    border-radius: 5px;
+    justify-content: space-between;
+    
+    background: var(--primary1);
+    outline: none;
+    font-size: 1rem;
+}
+.inputContainer:hover {
+    background: var(--primary2);
+}
+.inputContainer:focus-within {
+    background: var(--primary3);
+}
+
+
+/* LABEL */
+.inputContainer label {
+    display: flex;
+    align-items: center;
+
+    background: var(--secondary1);
+    min-width: 25%;
+    max-width: 25%;
+    padding-bottom: 2px;
+    padding-right: 5px;
+    padding-left: 5px;
+    border-radius: 5px 0px 0px 5px;
+    user-select: none;
+    overflow-wrap: break-word;
+}
+
+/*  Il font usato è misallineato in verticale 
+    quindi sposto un pelo in basso il testo */
+.inputContainer label span {
+    width: 100%;
+    position: relative;
+    top: 2.5px;
+
+    font-weight: 400;
+    font-size: 1rem;
+}
+.inputContainer:hover label {
+    background: var(--secondary2);
+}
+.inputContainer:focus-within label {
+    background: var(--secondary3);
+}
+
+
+/* INPUT FIELD*/
+.inputContainer .field {
+    width: 100%;
+    margin: 0%;
+    padding-left: 10px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    border-radius: 0 5px 5px 0;
+    outline: none;
+    background: none;
+
+    font-family: 'Roboto Slab', serif;
+    font-size: 0.8rem;
+}
+
+.inputContainer input[type=number] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: textfield;
+}
+
+/* FOCUS BORDERS */
+.inputContainer .field {
+    border: 1px solid var(--primary2);
+    border-left: 0px;
+}
+.inputContainer label {
+    border: 1px solid var(--secondary2);
+    border-right: 0px;
+}
+
+.inputContainer:focus-within .field {
+    border: 1px solid var(--primary4);
+    border-left: 0px;
+}
+.inputContainer:focus-within label {
+    border: 1px solid var(--secondary4);
+    border-right: 0px;
+}
+
+/* SUBMIT BUTTON */
+.submitButton {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: var(--secondary1);
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    
+    width: min-content;
+    float: right;
+    margin-right: 5%;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+    font-family: 'Roboto Slab', serif;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.submitButton:hover {
+    background: var(--secondary2);
+}
+.submitButton:focus {
+    background: var(--secondary3);
+}
+.submitButton:active {
+    background: var(--secondary4);
+}
+
+.spandiv span {
+    display: none;
+}
+.spandiv::after {
+    display: inline;
+    content: "normal";
+}
+
+/* solo schermi xxl */
+@media only screen and (min-width: 1200px) {
+    .form {
+        width: 50%;
+        border-radius: 1vw;
+        padding-bottom: 1vw;
+        box-shadow: 0px 0.3vw 1.5vw rgba(0, 0, 0, 0.5);
+    }
+
+    .formTitle h1 {
+        font-size: 2.2vw;
+    }
+
+    .inputContainer label span {
+        font-size: 1.5vw;
+    }
+
+    .inputContainer .field {
+        font-size: 1.3vw;
+    }
+
+    .submitButton {
+        font-size: 1.5vw;
+    }
+
+    .spandiv::after {
+        content: "xxl";
+    }
+}
+
+/* schermi medi e piccoli */
+@media only screen and (max-width: 768px) {
+    .form {
+        width: 90%;
+    }
+
+    .submitButton {
+        width: 90%;
+        margin-left: 5%;
+        margin-top: 1%;
+        margin-bottom: 1%;
+    }
+
+    .spandiv::after {
+        content: "medium";
+    }
+}
+
+/* solo schermi piccoli */
+@media only screen and (max-width: 600px) {
+    .form {
+        width: 100%;
+        border-radius: 0;
+        box-shadow: none;
+    }
+
+    .inputContainer {
+        justify-content: left;
+        flex-direction: column;
+    }
+
+    .inputContainer label {
+        max-width: none;
+        width: 100%;
+        border-radius: 5px 5px 0px 0px;
+    }
+
+    .inputContainer .field {
+        border-radius: 0px 0px 5px 5px;
+    }
+
+    .spandiv::after {
+        content: "small";
+    }
+
+    /*i focus borders vanno cambiati*/
+    .inputContainer .field {
+        border: 1px solid var(--primary2);
+        border-top: 0px;
+    }
+    .inputContainer label {
+        border: 1px solid var(--secondary2);
+        border-bottom: 0px;
+    }
+    
+    .inputContainer:focus-within .field {
+        border: 1px solid var(--primary4);
+        border-top: 0px;
+    }
+    .inputContainer:focus-within label {
+        border: 1px solid var(--secondary4);
+        border-bottom: 0px;
+    }
+}
