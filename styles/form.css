@@ -66,12 +66,8 @@
     overflow-wrap: break-word;
 }
 
-/*  Il font usato è misallineato in verticale 
-    quindi sposto un pelo in basso il testo */
 .inputContainer label span {
     width: 100%;
-    position: relative;
-    top: 2.5px;
 
     font-weight: 400;
     font-size: 1rem;
