@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Esercizio Resistenze - Tommaso Goni</title>
+    <title>Resistenza LED - Tommaso Goni</title>
     <link rel="stylesheet" href="styles/boilerplate.css" />
     <link rel="stylesheet" href="styles/style.css" />
     <link rel="stylesheet" href="styles/form.css" />
@@ -18,9 +18,9 @@
           <div class="popupicon popupclose"></div>
       </div>
     </div>
-    <div class="spandiv">
+    <!-- <div class="spandiv">
       <span></span>
-    </div>
+    </div> -->
     <div class="formContainer">
       <form action="javascript:void(0);" class="form">
         <div class="formTitle">
@@ -28,11 +28,11 @@
         </div>
         <div class="inputContainer">
           <label for="1"><span>Tensione</span></label>
-          <input type="text" id="1" name="vcc" class="field" />
+          <input type="text" id="1" name="vcc" class="field" autocomplete="off"/>
         </div>
         <div class="inputContainer">
           <label for="2"><span>Corrente</span></label>
-          <input type="text" id="2" name="i" class="field" />
+          <input type="text" id="2" name="i" class="field" autocomplete="off"/>
         </div>
         <div class="inputContainer">
           <label for="3"><span>Colore LED</span></label>
@@ -49,6 +49,7 @@
   </body>
   <footer>
     <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
-    <script src="script.js"></script>
+    <script src="./js/popup.js"></script>
+    <script src="./js/script.js"></script>
   </footer>
 </html>
