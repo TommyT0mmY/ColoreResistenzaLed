@@ -17,5 +17,5 @@ function onError(errorMessage) {
 function onSubmit(vcc, i, color) {
     console.log(vcc, i, color);
     //check if vcc and i are numbers
-    onError("Lorem ipsum dolor sit amet, consectetur adipiscing elit.");
+    onError("Inserire un numero valido");
 }

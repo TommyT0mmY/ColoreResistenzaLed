@@ -23,7 +23,7 @@
     display: flex;
     width: max-content;
     max-width: 40vw;
-    gap: 2vw;
+    gap: 1vw;
     background: var(--error0);
 
     text-align: center;
@@ -31,15 +31,50 @@
     justify-content: center;
     
     padding-left: 2vw;
-    padding-right: 2vw;
+    padding-right: 1vw;
     padding-top: 1vh;
     padding-bottom: 1vh;
 
     font-size: 1vw;
+    font-weight: 500;
 }
 
+/*POPUP ICONS*/
 .popupicon {
     user-select: none;
-    width: 1.4vw;
-    height: 1.4vw;
+    width: 1vw;
+    height: 1vw;
+}
+
+/*Applying SVGs*/
+.popupicon {
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    background: black;
+}
+.erroricon {
+    -webkit-mask-image: url("../icons/error_icon.svg");
+    mask-image: url("../icons/error_icon.svg");
+}
+.popupclose {
+    -webkit-mask-image: url("../icons/close_icon.svg");
+    mask-image: url("../icons/close_icon.svg");
+}
+
+
+/*POPUP CLOSE BUTTON*/
+.popupclose {
+    cursor: pointer;
+    margin-left: 1vw;
+}
+
+.popupclose:hover {
+    transform: scale(1.1);
+    transition: all 200ms;
+}
+
+/*POPUP TEXT*/
+.popuptext {
+    position: relative;
+    bottom: 1px;
 }
