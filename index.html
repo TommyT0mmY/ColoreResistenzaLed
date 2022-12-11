@@ -5,10 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Resistenza LED - Tommaso Goni</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="stylesheet" href="styles/boilerplate.css" />
     <link rel="stylesheet" href="styles/style.css" />
     <link rel="stylesheet" href="styles/form.css" />
     <link rel="stylesheet" href="styles/popup.css" />
+    <link rel="stylesheet" href="styles/resistor.css">
   </head>
   <body>
     <div class="popup">
@@ -45,6 +47,15 @@
         </div>
         <button type="submit" class="submitButton" onclick="onSubmit(this.form.vcc.value, this.form.i.value, this.form.color.value)">Invia</button>
       </form>
+    </div>
+    <div class="resistorContainer">
+      <div class="resistor">
+        <img class="res_base" src="./images/resistor/res_base.png" alt="Resistenza">
+        <img class="res_band1 not_set">
+        <img class="res_band2 not_set">
+        <img class="res_band3 not_set">
+        <img class="res_tol not_set">
+      </div>
     </div>
   </body>
   <footer>

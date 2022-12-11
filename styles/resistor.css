@@ -1,0 +1,151 @@
+.resistorContainer {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5vh;
+}
+
+.resistor {
+    position: relative;
+    width: min(50vw, 400px);
+    min-width: 30vw;
+    height: fit-content;
+}
+
+.resistor img {
+    user-select: none;
+    width: 100%;
+    height: 100%;
+}
+
+.resistor img:not(.res_base) {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    mask-size: 100%;
+}
+
+.res_band1 {
+    -webkit-mask-image: url("../images/resistor/band1.svg");
+    mask-image: url("../images/resistor/band1.svg");
+}
+
+.res_band2 {
+    -webkit-mask-image: url("../images/resistor/band2.svg");
+    mask-image: url("../images/resistor/band2.svg");
+}
+
+.res_band3 {
+    -webkit-mask-image: url("../images/resistor/band3.svg");
+    mask-image: url("../images/resistor/band3.svg");
+}
+
+.res_tol {
+    -webkit-mask-image: url("../images/resistor/tol.svg");
+    mask-image: url("../images/resistor/tol.svg");
+}
+
+
+/*COLORS*/
+
+.not_set {
+    /*background gradient between all previous colors*/
+    background: linear-gradient(
+        rgba(255, 0, 0, 1) 0%,
+        rgba(255, 154, 0, 1) 10%,
+        rgba(208, 222, 33, 1) 20%,
+        rgba(79, 220, 74, 1) 30%,
+        rgba(63, 218, 216, 1) 40%,
+        rgba(47, 201, 226, 1) 50%,
+        rgba(28, 127, 238, 1) 60%,
+        rgba(95, 21, 242, 1) 70%,
+        rgba(186, 12, 248, 1) 80%,
+        rgba(251, 7, 217, 1) 90%,
+        rgba(255, 0, 0, 1) 100%
+    );
+}
+
+
+.black {
+    background: #000000;
+}
+
+.brown {
+    background: linear-gradient(
+        #8B4513,
+        #be5d17,
+        #8B4513
+    )
+}
+
+.red {
+    background: linear-gradient(
+        #FF0000,
+        #ff4d4d,
+        #FF0000
+    )
+}
+
+.orange {
+    background: linear-gradient(
+        #FFA500,
+        #ffc68d,
+        #FFA500
+    )
+}
+
+.yellow {
+    background: linear-gradient(
+        #FFFF00,
+        #ffff99,
+        #FFFF00
+    )
+}
+
+.green {
+    background: linear-gradient(
+        #00FF00,
+        #99ff99,
+        #00FF00
+    )
+}
+
+.blue {
+    background: linear-gradient(
+        #0000FF,
+        #9999ff,
+        #0000FF
+    )
+}
+
+.violet {
+    background: linear-gradient(
+        #8A2BE2,
+        #cc99ff,
+        #8A2BE2
+    )
+}
+
+.grey {
+    background: linear-gradient(
+        #808080,
+        #cccccc,
+        #808080
+    )
+}
+
+.white {
+    background: #FFFFFF;
+}
+
+.gold {
+    background: #FFD700;
+}
+
+.silver {
+    background: #C0C0C0;
+}

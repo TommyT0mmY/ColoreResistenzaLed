@@ -12,4 +12,9 @@ function onSubmit(vcc, i, color) {
     else if (vcc < 0 || i < 0) {
         return Popup.throwError("Inserisci valori positivi");
     }
+
+    $(".res_band1").addClass("violet");
+    $(".res_band2").addClass("green");
+    $(".res_band3").addClass("grey");
+    $(".res_tol").addClass("gold");
 }
