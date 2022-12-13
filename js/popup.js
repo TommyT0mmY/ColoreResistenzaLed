@@ -16,6 +16,8 @@ class Popup {
         this.#popupClose = this.#popup.querySelector('.popupclose');
 
         this.#popupClose.addEventListener('click', () => this.#close());
+        this.#popup.addEventListener('mouseenter', () => clearTimeout(this.#closeTimeout));
+        this.#popup.addEventListener('mouseleave', () => this.#closeTimeout = setTimeout(() => this.#close(), this.POPUP_TIMEOUT));
     }
 
     static throwError(errorMessage) {
