@@ -17,15 +17,17 @@
     user-select: none;
     width: 100%;
     height: 100%;
+    top: 0;
+    left: 0;
 }
 
 .resistor img:not(.res_base) {
     position: absolute;
-    top: 0;
-    left: 0;
+
 
     -webkit-mask-repeat: no-repeat;
     mask-repeat: no-repeat;
+    -webkit-mask-size: 100%;
     mask-size: 100%;
 }
 
