@@ -14,6 +14,7 @@ $(document).ready(function () {
 
 function onSubmit(vcc, i, color) {
     console.debug("onSubmit:", vcc, i, color);
+    
     if (vcc == "" || i == "") {
         return Popup.throwError("Inserisci tutti i valori");
     }
@@ -22,6 +23,9 @@ function onSubmit(vcc, i, color) {
     }
     else if (vcc < 0 || i < 0) {
         return Popup.throwError("Inserisci valori positivi");
+    }
+    else if (i < 0.005 || i > 0.02) {
+        return Popup.throwError("Corrente non compresa tra 5 e 20 mA");
     }
 
     $.ajax({
