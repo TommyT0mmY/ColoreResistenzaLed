@@ -46,6 +46,9 @@ function onSubmit(vcc, i, color) {
             $(".res_band2").addClass(data.band2);
             $(".res_band3").addClass(data.band3);
             $(".res_tol").addClass("gold");
+
+            $(".resistorValue").text(data.resistance);
+            $(".resistorTitle").removeClass("invisible");
         },
         error: function (data) {
             let errorMessage = data?.responseText;

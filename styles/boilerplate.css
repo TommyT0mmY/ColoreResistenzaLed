@@ -85,3 +85,7 @@ input[type="email"]:invalid {
 sub, sup { 
 	line-height: 0;
 }
+
+.invisible {
+	opacity: 0%;
+}
